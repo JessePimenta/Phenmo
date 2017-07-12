@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phenmo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <meta name="referrer" content="origin" />
+    <link rel="stylesheet" href="styles/main.css/">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome-webfont.woff">
+    <link rel="stylesheet" href="https://d1v6x81qdeozhc.cloudfront.net/static/css/reset-fonts-grids-b09b1f223e325e3648101f405347dde3.gz.css" type="text/css" />
+    <link rel="stylesheet" href="https://d1v6x81qdeozhc.cloudfront.net/static/css/app.web.1-5a9bd8417daf8939916a9f2de93f7dcf.gz.css" type="text/css" media="screen" title="venmo web" charset="utf-8" />
+    <link rel="stylesheet" href="styles/animate.css" type="text/css" media="screen" title="venmo web" charset="utf-8" />
+    <link rel="stylesheet" href="https://d1v6x81qdeozhc.cloudfront.net/static/css/js-c6e5024b89d7ec58b0233efc69f1a214.gz.css" type="text/css" media="screen" title="venmo web" charset="utf-8" />
+    <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/main.js"></script>
+
+</head>
+
+<body class="align_center">
+    <div id=""></div>
+    <div id="header">
+        <div class="">
+            <div id="headerContent fade_first">
+                <div class="float_left">
+                    <a href="/"><img id='phenoLogoWhite' src="assets/logos/phenmo-white.png" width="120" height="47" alt="Venmo" style="padding-left:3px;" /></a>
+                </div>
+                <div class="float_right" style="padding-left: 12px; padding-right: 10px">
+                    <div class="float_right">
+                        <form method="GET" action="/search">
+                            <input id="searchboxx" value="Search Phenos" name="q" autocomplete="off" class="light_gray" />
+                        </form>
+                    </div>
+                </div>
+                <div class="float_right smaller hide-mobile">
+                    <div>
+                        <a class="hLink" href="/my-profile.html">My Profile</a>
+                        <!--                            <a class="hLink" href="/account/settings/">Settings</a>-->
+                        <a class="hLink" href="/dashboard.html">Dashboard</a>
+                        <a class="hLink" href="/account/logout">Log Out</a>
+                    </div>
+                </div>
+                <input id="burger" type="checkbox" style='visibility: hidden' />
+
+                <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+                </label>
+
+                <nav>
+                    <div class="float_left" style="padding-left: 12px;">
+                        <div class="float_left">
+                            <form method="GET" action="/search">
+                                <input id="searchbox-mobile" value="Search Phenos" name="q" autocomplete="off" class="light_gray" />
+                            </form>
+                        </div>
+                    </div>
+                    <ul>
+                    <li><a href="/my-profile.html">My Profile</a></li>
+                        <li><a href="/dashboard.html">Dashboard</a></li>
+                        <li><a href="index.html">Log Out</a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-md-12">
+        <div id="" class=" m_twenty_b">
+         <p class="bold my-profile" href="/my-profile.html">My Profile</p>
+
+            <!-- USER -->
+            <div class="m_twenty_t m_twenty_t m_twenty_b">
+                <div class="gray_bottom_divider p_ten_f">
+                    <div class="">
+                        <a href="/my-profile.html">
+                            <img src="assets/Krish.png" class="sq75 m_ten_r " />
+                        </a>
+                    </div>
+                    <!-- NAME -->
+                    <div class="name">
+                        <a class="bold" href="/my-profile.html">Krish Menon</a>
+                        <div class="m_five_t small">
+                            <a href="/account/settings/profile-picture">+ Add Photo</a>
+                        </div>
+                        <div class="col-md-12 compliments">
+                            <div id="" class="name compliments_given">
+                                3 Compliments Given
+                            </div>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <div id="" class="name compliments_received">
+                                9 Compliments Received
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Compliment Balance -->
+        </div>
+    </div>
+    <div id="left_and_right" class="wmt901">
+        <div class="col-md-12 col-sm-12">
+            <div class="m_twenty_t">
+            </div>
+            <div class="rectBox ">
+            </div>
+            <div class="">
+                <!-- close and reopen from header -->
+                <a name="friends_activity"></a>
+                <div style="padding:20px;" class="pill p_twenty_f links_ten_apart gray_bottom_divider light_gray_background">
+                    <div class="">
+                        <a href='dashboard.html' id='' class="dashboard-toggle-button back-button">Back</a>
+                        <h3 class='activity'>My Activity</h3>
+                        <div class="notifcations-header"><h5>Notifications</h5></div>
+                        <br>
+                        <div class='col-md-12 col-lg-12 col-sm-12 col-xs-12 notification-block'>
+                                    <div class=' col-md-inset-4 col-md-12 col-sm-12 col-xs-12'>
+                                        <p class='notification'><span id='user_name'> You have 2 compliments waiting for you, Krish. Pay someone else a compliment to view them!</span>&nbsp;</p>&nbsp;
+                                    </div>
+                                </div>
+                               <hr>
+                                
+                    </div>
+
+                    <div id="Me" class=" dashTab animated fadeIn" style="display:block">
+                        <h2></h2>
+                        <div class='row'>
+                            <div class='container compliment-container'>
+                                <div class='col-md-12 col-lg-12 col-sm-12 col-xs-5 compliment-block'>
+                                    <div class='col-md-12 compliment-content'>
+                                        <a class='user-profile-link' href='user-profile.html'><img src="assets/jason.png" class="sq75 m_ten_r " /></a>&nbsp;
+                                    </div>
+                                    <div class='col-md-12'>
+                                        <p class='compliment-link-value'><span id='user_name'>Jason DeTurris</span>&nbsp; complimented you on your pitch this morning. </p>&nbsp;
+                                        <i class="likes fa fa-heart-o" aria-hidden="true"></i>&nbsp; 0 likes
+
+                                    </div>
+                                </div>
+                                
+                                <div class='col-md-12 col-lg-12 col-sm-12 col-xs-5 compliment-block'>
+                                    <div class='col-md-12'>
+                                        <img src="assets/Krish.png" class="sq75 m_ten_r " />&nbsp;
+                                    </div>
+                                    <div class='col-md-12'>
+                                        <p class='compliment-value'>You payed <span id='user_name'>Cornelia Brown</span> a compliment for her project management skills. </p>&nbsp;
+                                        <i class="likes fa fa-heart" aria-hidden="true"></i>&nbsp; 2 <a href='likes.html' class='like-link'>likes</a>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+                                <div class='col-md-12 col-lg-12 col-sm-12 col-xs-5 compliment-block'>
+                                    <div class='col-md-12'>
+                                        <img src="assets/chris.png" class="sq75 m_ten_r " />&nbsp;
+                                    </div>
+                                    <div class='col-md-12'>
+                                        <p class='compliment-value'><span id='user_name'>Chris Adams</span>&nbsp; complimented you on your nice shoes. </p>&nbsp;
+                                        <i class="likes fa fa-heart" aria-hidden="true"></i>&nbsp; 10 likes
+
+                                    </div>
+                                </div>
+                                
+                                <div class='col-md-12 col-lg-12 col-sm-12 col-xs-5 compliment-block'>
+                                    <div class='col-md-12'>
+                                        <img src="assets/Krish.png" class="sq75 m_ten_r " />&nbsp;
+                                    </div>
+                                    <div class='col-md-12'>
+                                        <p class='compliment-value'><span id='user_name'>Anoosh Voltaire-Behi</span>&nbsp; complimented you on your never-say-no attitude. </p>&nbsp;
+                                        <i class="likes fa fa-heart" aria-hidden="true"></i>&nbsp; 5 likes
+
+                                    </div>
+                                </div>
+                                
+                                <div class='col-md-12 col-lg-12 col-sm-12 col-xs-5 compliment-block'>
+                                    <div class='col-md-12'>
+                                        <img src="assets/Krish.png" class="sq75 m_ten_r " />&nbsp;
+                                    </div>
+                                    <div class='col-md-12'>
+                                        <p class='compliment-value'>You payed <span id='user_name'>Katherine Koh</span> a compliment for her project management skills. </p>&nbsp;
+                                        <i class="likes fa fa-heart-o" aria-hidden="true"></i>&nbsp; 0 likes
+
+                                    </div>
+                                </div>
+                                
+                                <div class='col-md-12 col-lg-12 col-sm-12 col-xs-5 compliment-block'>
+                                    <div class='col-md-12'>
+                                        <img src="assets/Krish.png" class="sq75 m_ten_r " />&nbsp;
+                                    </div>
+                                    <div class='col-md-12'>
+                                        <p class='compliment-value'><span id='user_name'>Andy Hawgood</span>&nbsp; complimented you on your fresh breath. </p>&nbsp;
+                                        <i class="likes fa fa-heart-o" aria-hidden="true"></i>&nbsp; 0 likes
+                                    </div>
+                                </div>
+                                
+                                <div class='col-md-12 col-lg-12 col-sm-12 col-xs-5 compliment-block'>
+                                    <div class='col-md-12'>
+                                        <img src="assets/Krish.png" class="sq75 m_ten_r " />&nbsp;
+                                    </div>
+                                    <div class='col-md-12'>
+                                        <p class='compliment-value'><span id='user_name'>Nic Brenden</span>&nbsp; complimented you on your stellar design skills. </p>&nbsp;
+                                       <i class="likes fa fa-heart" aria-hidden="true"></i>&nbsp; 5 likes
+
+                                    </div>
+                                </div>
+                                
+                                <div class='col-md-12 col-lg-12 col-sm-12 col-xs-5 compliment-block'>
+                                    <div class='col-md-12'>
+                                        <img src="assets/Krish.png" class="sq75 m_ten_r " />&nbsp;
+                                    </div>
+                                     <div class='col-md-12'>
+                                        <p class='compliment-value'>You payed <span id='user_name'>Simrit Brar</span> a compliment for her design skills. </p>&nbsp;
+                                        <i class="likes fa fa-heart" aria-hidden="true"></i>&nbsp; 5 likes
+
+                                    </div>
+                                </div>
+                                
+                                <div class='col-md-12 col-lg-12 col-sm-12 col-xs-5 compliment-block'>
+                                    <div class='col-md-12'>
+                                        <img src="assets/Krish.png" class="sq75 m_ten_r " />&nbsp;
+                                    </div>
+                                    <div class='col-md-12'>
+                                        <p class='compliment-value'><span id='user_name'>Jenny Court</span>&nbsp; complimented you on your winning pitch. </p>&nbsp;
+                                        <i class="likes fa fa-heart" aria-hidden="true"></i>&nbsp; 5 likes
+
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
